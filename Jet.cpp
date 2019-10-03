@@ -33,6 +33,10 @@ void Jet::setEngineCount(int engNum) {
 
 }
 
-double Jet::mileageEstimate(double time) {
-    
+double Jet::mileageEstimate(int engNum) {
+    srand(time(NULL));
+    int randNum = rand() % 100 + 40;
+    if(fuelType == "Rocket" && engNum >= 2){
+        return randNum + (randNum * 0.055);
+    }
 }

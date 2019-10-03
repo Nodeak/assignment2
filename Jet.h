@@ -10,7 +10,9 @@
 #define DRIVINGSIMULATOR_JET_H
 
 #include "PoweredVehicle.h"
-#include ""
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+
 
 class Jet : public PoweredVehicle {
 
@@ -26,7 +28,7 @@ public:
     virtual ~Jet();
     int getEngineCount();
     void setEngineCount(int numberOfEngines);
-    virtual double mileageEstimate(double time);
+    virtual double mileageEstimate(int engNum);
 };
 
 
