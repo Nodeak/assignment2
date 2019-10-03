@@ -6,4 +6,28 @@
 	5.5% per engine. Jet inherits from the PoweredVehicle class.
 */
 
+#ifndef DRIVINGSIMULATOR_JET_H
+#define DRIVINGSIMULATOR_JET_H
 
+#include "PoweredVehicle.h"
+#include ""
+
+class Jet : public PoweredVehicle {
+
+private:
+    int engineCount;
+
+public:
+    Jet();
+
+    explicit Jet(string brand, string model, string fuelType,
+                 int numberOfEngines);
+
+    virtual ~Jet();
+    int getEngineCount();
+    void setEngineCount(int numberOfEngines);
+    virtual double mileageEstimate(double time);
+};
+
+
+#endif //DRIVINGSIMULATOR_CAR_H
