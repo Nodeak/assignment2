@@ -20,5 +20,5 @@ double Skateboard::mileageEstimate(double time) {
         double addedMileage = rand() % (int)(time * (0.33)) + 1;
         return mileage + addedMileage;
     }
-    return mileage
+    return mileage;
 }
