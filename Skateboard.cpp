@@ -17,7 +17,7 @@ double Skateboard::mileageEstimate(double time) {
     srand(time);
     double mileage = rand() % (1/2) + (1/10);
     if( time > 25 && time < 250 ){
-        double addedMileage = rand() % 1 + (time * (1/3));
+        double addedMileage = rand() % (int)(time * (0.33)) + 1;
         return mileage + addedMileage;
     }
     return mileage
