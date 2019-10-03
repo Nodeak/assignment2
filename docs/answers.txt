@@ -1,0 +1,49 @@
+a) Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 983 bytes | 491.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Nodeak/assignment2.git
+   5ac6e16..97917e5  master -> master
+
+b) There has been 11 commits for this repository (I had to re-do
+questions A-C because execution of git push was killed before completion)
+
+Command used: git rev-list --count master
+(git -> revision list -> count -> of branch master)
+
+c) There was no output for 'git diff .gitignore' so there was no information
+on when it was last modified.
+
+d) Branches can be used to implement and test new features/ideas without
+directly changing the master. It is also useful control and approve what
+is being added/removed from the project.
+
+e) git log is used to show all the changes that have already been committed to the branch.
+   git status is used to show all the files that have been changed that are not added,
+	committed, or pushed to the branch yet.
+
+f) git log Vehicle.h
+
+g) git log --grep="file"
+
+h) I) Inheritance allows subclasses to take on properties of its parent class.
+  II) Polymorphism allows for a different function to be used depending on the
+	given input
+ III)) Encapsulation protects outside information of a class from being directly
+	accessed or changed. Data can usually be changed through the use of
+	public functions.
+
+i) A Dictator and Lieutenant Workflow has a hierarchical structure, requiring everyone
+	to pull from the same central repo. It also requires the changes to go through
+	multiple layers before being merged with the master branch. Whereas the Integration
+	Manager allows each developer to have their own public repo that the manager pulls
+	from to check and approve changes to the master branch.
+
+j) A team of 100 developers would benefit with a D&L Workflow since there would be more
+	control over what is added to the master branch. A Centralized workflow would 
+	have no hierarchy and it would be a free-for-all for developers to make sure
+	their changed to the project would not conflict with any of the other 99 
+	developer's changes.
